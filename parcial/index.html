@@ -9,22 +9,21 @@
   <body
     style="
       margin: 40px;
-      color: rgb(0, 0, 0);
-      background-color: rgb(180, 173, 173);
-    "
-  >
+      background-color: #006EB0;">
     <header>
-      <div class="menu-superior" style="text-align: right">
+      <div class="menu-superior" >
         <ul>
-          <a href="vistas/nosostros.html"
-            ><li style="list-style: none; float: right; width: 100px">
-              sobre nosotros
+          <a href="#valores"
+            ><li style="list-style: none; float: right; width: 89px">
+              valores
             </li>
           </a>
-          <a href="vistas/blog.html"
-            ><li style="list-style: none; float: right; width: 70px">blog</li>
+          <a href="#portafolio">
+            <li style="list-style: none; float: right; width: 100px">
+              portafolio
+            </li>
           </a>
-          <a href="vistas/contacto.html">
+          <a href="#contactos">
             <li style="list-style: none; float: right; width: 80px">
               contacto
             </li>
@@ -32,7 +31,7 @@
         </ul>
       </div>
       <div class="titulo">
-        <h1><center>Andrés Gustavo Torres</center></h1>
+        <h1><center><u> Andrés Gustavo Torres</u></center></h1>
       </div>
       <hr />
       <div style="text-align: center">
@@ -46,15 +45,19 @@
         ></video>
       </div>
       <div>
+        <hr>
+        <br>
+        <br>
+        <a name="portafolio"></a>
         <table style="font-size: large">
-          <th bgcolor="white">
+          <th bgcolor="">
             <p>
               <center>
                 <img src="img/1.jpg" alt="justicia" width="50%" align="left" />
-                En Andrés Gustavo Torres Abogados S.A, ponemos a su disposición
+                <p>En Andrés Gustavo Torres Abogados S.A, ponemos a su disposición
                 nuestros servicios de asesoría y representación, para demandar
                 ante la jurisdicción contenciosa administrativa al Estado, en
-                las siguientes acciones o pretensiones:
+                las siguientes acciones o pretensiones:</p>
                 <br />
                 <p>
                 <u>Judiciales:</u> Condenas arbitrarias y detenciones injustas
@@ -78,19 +81,22 @@
         </table>
       </div>
       <br />
+      <a name="valores"></a>
+      <br>
+      <br>
       <div class="corporativos">
               <center>
                 <img
                   src="img/2.jpg"
                   alt="portafolio"
-                  width="100%"
+                  width="30%"
                 />
               </center>
       </div>
       <br>
       <hr>
       <div class="valores">
-        <table style="font-size: xx-large;">
+        <table width="40%" style="font-size: x-large;" align="right">
             <tr>
             <th>confianza</th>
             </tr>
@@ -100,8 +106,7 @@
                 </td>
             </tr>
         </table>
-        <hr>
-        <table style="font-size: xx-large;">
+        <table width="40%" style="font-size: x-large;" align="left">
             <tr>
                 <th>Exelencia</th>
             </tr>
@@ -114,6 +119,82 @@
             </tr>
         </table>
     </div>
+    <br>
+    <div>
+      <table width="40%" style="font-size: x-large;" align="center">
+        <tr>
+          <th>Respeto</th>
+        </tr>
+        <tr>
+          <td>
+            Reconocemos en  cada uno la dignidad que merece, honramos las reglas y acuerdos establecidos en las relaciones con nuestros clientes, conduciéndonos de un modo  que nos permita mantener relaciones más pacíficas y ordenadas
+          </td>
+        </tr>
+      </table>
+      <hr>
+      <br>
+      <div class="formulario" >
+        <form action="" style="font-size: x-large;" align="center"> 
+          <label for="nombre" >
+            <span>nombre</span>
+            <input id="username" name="username">
+          </label>
+          <label for="apellido" >
+            <span>Apellido</span>
+            <input id"apellido" name="apellido">
+          </label>
+          <br>
+          <label for="ciudad" >
+            <span>ciudada</span>
+            <input id"ciudad" name="ciudad">
+          </label>
+          <label for="telefono" >
+            <span>telefono</span>
+            <input id"telefono" name="telefono">
+          </label>
+          <br>
+          <br>
+          <label for="consulta">consulta</label>
+          <textarea name="comentarios" id="comentarios" cols="90" rows="5"></textarea>
+          <br>
+          <img src="img/consulta.jpg" alt="consulta" align="center">
+          <div>
+            <button type="submit"; >Enviar</button>
+          </div>
+          
+      </div>
+      
+      <hr>
+      <br>
+      <br>
+      <br>
+    </div>
     </header>
+    <footer>
+      <a name="contactos"></a>
+      <table align="right" style="margin: 0 200px; font-size:x-large;">
+        <tr>
+          <th>
+            <h2><u>contactos</u></h2>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+           <li><u>direccion:</u> calle de Barcelo justo al estadio</li>
+           <li>telefono: 932 123123</li>
+           <li>horarios:</li>
+              <ul>
+                <li>lunes a viernes: 9:00 a 13:00</li>
+                <li>lunes a viernes: 16:00 a 19:30</li>
+                <li>sabados: 9:00 a 13:30</li>
+              </ul>
+          </ul>
+          </td>
+          <br>
+        </tr>
+      </table>
+      <img src="img/pie.jpg" alt="">
+    </footer>
   </body>
 </html>
