@@ -1,0 +1,45 @@
+[class*=box]{
+    width: 150px;
+    height: 150px;
+    margin: 2.1em;
+    background-color: #f5b041;
+    padding: 10px;
+}
+
+.box-1{
+    border: 5px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.box-2{
+    border: 5px solid red;
+    border-top-color: transparent ;
+    border-style: dashed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+
+/* .box-1{
+    width: 100px;
+    height: 100px;
+    background: lime;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 1px;
+    margin-bottom: 150px;
+    padding: 20px;
+    border: solid 1px black;
+    
+}
+
+.box-2{
+    width: 150px;
+    height: 30px;
+    background: lightblue;
+    padding: 1px 20px 1px 55px ;
+    margin: 30px;
+} */
