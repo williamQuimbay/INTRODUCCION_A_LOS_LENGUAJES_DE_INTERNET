@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(img/body.jpg);
+  background-color: #7c3b3b;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "header    header      header    header"
+    "contenido contenido   contenido contenido"
+    "widgets-1 widgets-2  widgets-3  sidebar"
+    "widget-4  widget-5    widget-6  sidebar"
+    "widget-7  widget-8    widget-9  sidebar"
+    "footer    footer      footer    footer";
+}
+.container > div,
+.container .header,
+.container .contenido,
+.container .sidebar {
+  /* background: #ffffff; */
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+.container .contenido .titulo{
+  text-align: center;
+  background-color: #592270;
+  border-radius: 5px;
+  box-shadow: 15px 7px #270a33;
+  text-shadow: 6px 4px black;
+}
+.container .footer {
+  background-color: #6c11c2;
+  border: 1px solid #562764;
+}
+.container .header {
+  background: #e019c6;
+  color: #ffffff;
+  grid-area: header;
+}
+.container .header img {
+  width: 100%;
+  border-radius: 10px;
+}
+.container .contenido {
+  grid-area: contenido;
+}
+.container .sidebar {
+  grid-column: 3 / 4;
+  /* background: #ffffff; */
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  grid-area: sidebar;
+}
+.container .widget-1,
+.container .widget-2,
+.container .widget-3,
+.container .widget-4,
+.container .widget-5,
+.container .widget-6,
+.container .widget-7,
+.container .widget-8,
+.container .widget-9 {
+  /* background: #ebe6e6; */
+  color: rgb(199, 22, 243);
+  height: 220px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+  /* border: 4px solid #270a33; */
+}
+.container .footer {
+  color: black;
+  text-align: center;
+  grid-area: footer;
+}
+.sidebar h3 {
+  text-align: center;
+}
+
+/*menu vertical*/
+
+.vertical-menu {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.vertical-menu a {
+  background-color: #b543eb;
+  color: #d6caca;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+.vertical-menu a:hover {
+  background-color: #4d134d;
+}
+.vertical-menu a.active {
+  background-color: #691b5c;
+  color: rgb(0, 5, 5);
+}
+
+/*formulario*/
+form {
+  background-color: #b543eb;
+  border: 3px solid #4d134d;
+  margin: 10px 5px;
+  padding: 10px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1 solid #4d134d;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+button {
+  background-color: #4d134d;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2em;
+  text-decoration: double;
+}
+button:hover {
+  opacity: 0.5;
+  color: rgb(0, 0, 0);
+}
+
+/* menu horozontal */
+
+.horizontal-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4d134d;
+}
+.horizontal-menu ul li {
+  float: right;
+}
+
+.horizontal-menu ul li a {
+  display: block;
+  color: #c031c0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.horizontal-menu ul li a:hover:not(.activa) {
+  background-color: #111;
+}
+.horizontal-menu .activa {
+  background-color: #270a33;
+}
+/*resposiv*/
+@media screen and (max-width: 768px) {
+  .container {
+    font-size: 25px;
+    grid-template-areas:
+      "header    header    header     header"
+      "contenido contenido contenido  contenido"
+      "sidebar   sidebar   sidebar    sidebar"
+      "widget-1  widget-1  widget-2   widget-2"
+      "widget-3  widget-3  widget-4   widget-4"
+      "widget-5  widget-5  widget-6   widget-6"
+      "widget-7  widget-7  widget-8   widget-8"
+      "widget-9  widget-9  widget-10  widget-10"
+      "footer    footer    footer     footer";
+  }
+}

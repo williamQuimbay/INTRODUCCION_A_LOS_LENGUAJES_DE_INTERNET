@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pelis.css" />
+    <script
+      src="https://kit.fontawesome.com/d8c894a938.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Odin pelis</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="../img/banner-supermario.jpg" alt="banner" />
+        <nav class="horizontal-menu">
+          <ul>
+            <li class="activa"><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html">peliculas</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="contenido" id="contenido">
+        <h1 class="titulo">Mario bros</h1>
+      </main>
+      <div class="widget-1">
+        <img src="../img/2.jpg" alt="imagen-2"/>
+      </div>
+      <p class="parrafo">
+        la adaptación de la serie de videojuegos de Nintendo. La película cuenta la historia de Mario y Luigi, dos hermanos que viajan a un mundo oculto para rescatar a la Princesa Peach, capturada por el malvado Rey Bowser. Las cosas, sin embargo no serán sencillas. 
+        <br><br>
+        Mario y Luigi tendrán que enfrentarse a un ejército de setas animadas antes de luchar contra su oponente. Rutas de ladrillos y castillos con múltiples peligros serán algunos de los obstáculos que los hermanos tendrán que superar para conseguir su objetivo.
+      </p>
+
+      <aside class="sidebar">
+        <h3>Menu</h3>
+        <nav class="vertical-menu">
+          <a href="#contenido" class="active"
+            ><i class="fa-solid fa-house"></i>Inicio</a
+          >
+          <a href="#"><i class="fa-solid fa-eye"></i> view</a>
+          <a href="#usuario"><i class="fa-solid fa-user"></i> profile</a>
+          <a href="../index.html"
+            ><i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+            volver</a
+          >
+        </nav>
+        <h3>Acceso</h3>
+        <form action="#" method="get">
+          <label for="usuario">Usuario:</label>
+          <input type="text" name="usuario" id="usuario" />
+          <br />
+          <label for="password">Contraseña:</label>
+          <input type="password" name="password" id="password" />
+          <br />
+          <button type="submit">
+            <i class="fa-sharp fa-solid fa-right-to-bracket"></i>Acceso
+          </button>
+        </form>
+      </aside>
+      <footer class="footer">
+        <h3>pagina de muestra - derechos reservados</h3>
+      </footer>
+    </div>
+  </body>
+</html>
