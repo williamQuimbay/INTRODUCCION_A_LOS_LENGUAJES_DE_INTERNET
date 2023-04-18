@@ -14,13 +14,13 @@
     margin: 20px auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
-      "header    header      header"
-      "contenido contenido   contenido"
-      "widget-1  parrafo     sidebar"
-      "footer    footer      footer";
+      "header    header      header      header"
+      "contenido contenido   contenido   contenido"
+      "widget-1  parrafo     parrafo     sidebar"
+      "footer    footer      footer      footer";
   }
   .container > div,
   .container .header,
@@ -83,6 +83,7 @@
   }
   .container .parrafo{
     color: white;
+    text-justify: initial;
     font-size: large;
   }
   .container .parrafo{
