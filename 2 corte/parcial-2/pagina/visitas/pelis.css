@@ -9,7 +9,7 @@
     font-family: "Source Sans Pro", sans-serif;
   }
   .container {
-    width: 100%;
+    width: 90%;
     max-width: 1000px;
     margin: 20px auto;
     display: grid;
@@ -27,7 +27,6 @@
   .container .header,
   .container .contenido,
   .container .sidebar {
-    /* background: #ffffff; */
     color: white;
     padding: 5px;
     border-radius: 4px;
@@ -61,7 +60,6 @@
   }
   .container .sidebar {
     grid-column: 3 / 4;
-    /* background: #ffffff; */
     text-align: left;
     align-items: center;
     justify-content: center;
@@ -69,7 +67,6 @@
     grid-area: sidebar;
   }
   .container .widget-1 {
-    /* background: #ebe6e6; */
     color: rgb(199, 22, 243);
     height: 220px;
     text-align: center;
@@ -184,7 +181,7 @@
     background-color: #270a33;
   }
   /*resposiv*/
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 720px) {
     .container {
       font-size: 25px;
       grid-template-areas:
@@ -192,6 +189,7 @@
         "contenido contenido contenido"
         "sidebar   sidebar   sidebar"        
         "widget-1  widget-1  widget-1"
+        "video     video     video"
         "parrafo   parrafo   parrafo"
         "footer    footer    footer";
     }
