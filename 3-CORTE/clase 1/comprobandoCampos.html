@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario java</title>
+    <script languaje="javascript">
+      function validarCampos1(form) {
+        if (form.campo1.value == form.campo2.value) {
+          alert("la contraseña no puede ser igual al  nimbre de usuario");
+          form.campo2.value = "";
+          form.campo2.focus();
+          return true;
+        }
+        form.submit();
+      }
+    </script>
+  </head>
+  <body>
+    <form name="ejemplo9" method="post" action="pagina.html" target="_blank">
+      usuario: <input type="text" name="campo1" /><br />
+      contraseña: <input type="password" name="campo2" /><br />
+      <input
+        type="button"
+        value="Registrarse"
+        onclick="validarCampos1(this.form)"
+      />
+    </form>
+  </body>
+</html>

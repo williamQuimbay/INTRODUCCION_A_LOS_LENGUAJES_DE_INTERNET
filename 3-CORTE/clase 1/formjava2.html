@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario java</title>
+    <script languaje="javaScript" src="../js/funcion.js"></script>
+  </head>
+  <body>
+    <form
+      action="elemplo"
+      method="pos"
+      action="../js/funcion.js"
+      target="_blank"
+    >
+      Por favor, complete su domicilio <br />
+      <br />
+      Calle: <input type="text" name="calle" size="40" /> Nro.:
+      <input type="text" name="nro" size="3" /> <br />
+      Piso: <input type="text" name="piso" size="2" /> Departamento:
+      <input type="text" name="dto" size="2" /><br />
+      Còdigo postal: <input type="text" name="cp" size="8" /> Ciudad:
+      <input type="text" name="ciudad" size="20" /> Paìs:
+      <input type="text" name="pais" size="20" /><br /><br />
+
+      verifique su domicilio:
+      <input
+        type="text"
+        name="domicilio"
+        size="80"
+        onfocus="completar(this.form)"
+      />
+      <br />
+      Si los datos no son correctos, <a onclick="ejemplo.domicilio.value=''"
+      style="cursor: hand;"></onclick>
+      presione aquì;</a> 
+      y realice los cambiosen los campos correspondientes. 
+      <br>
+      <input type="submit" value="comfimrar">
+    </form>
+  </body>
+</html>

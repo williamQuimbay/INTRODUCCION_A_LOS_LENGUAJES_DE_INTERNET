@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de nuevos controles</title>
+  </head>
+  <body>
+    <form
+      action="."
+      oninput="renge_control_value.value= range_control.valueAsNumber"
+    >
+      <p>
+        nombre: <input type="text" name="name_control" required />
+        <br />
+        correo Electonico: <input type="email" name="email_control" required />
+        <br />
+        url:
+        <input
+          type="url"
+          name="url_control"
+          placeholder="Escriba la url de tu pagina web"
+        />
+        <br />
+        fecha: <input type="date" name="date_control" autofocus />
+        <br />
+        Tiempo: <input type="time" name="time_control" />
+        <br />
+        fecha y hora de nacimineto:
+        <input type="datatime" name="datatime_control" />
+        <br />
+        mes: <input type="moth" name="month_control" />
+        <br />
+        Semana: <input type="week" name="weke_control" />
+        <br />
+        numero (min-10, max 10):
+        <input type="number" name="numbre_control" min="-10" max="10" />
+        <br />
+        Intervalo (min 0, max 10):
+        <input type="range" name="range_control" min="0" max="10" />
+        <br />
+        telefono: <input type="tel" name="tel_control" />
+        <br />
+        termino de busqueda: <input type="search" name="search_control" />
+        <br />
+        color favorito: <input type="color" name="color_control" />
+        <br />
+        <input type="submit" value="submit!" />
+      </p>
+    </form>
+  </body>
+</html>
