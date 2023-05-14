@@ -39,4 +39,5 @@ const object = {
         pais: 'colombia'
     }
 };
+const arr = [];
 //# sourceMappingURL=index.js.map
